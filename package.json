@@ -1,0 +1,38 @@
+{
+  "name": "nomadcoffee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node server.js",
+    "migrate": "npx prisma migrate dev --preview-feature",
+    "studio": "npx prisma studio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejjjjkang/nomadcoffee-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ejjjjkang/nomadcoffee-backend/issues"
+  },
+  "homepage": "https://github.com/ejjjjkang/nomadcoffee-backend#readme",
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.5.3",
+    "@prisma/client": "^3.11.1",
+    "apollo-server": "^2.25.2",
+    "dotenv": "^16.0.0",
+    "graphql": "^15.8.0",
+    "graphql-tools": "^8.2.3",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "prisma": "^3.11.1"
+  }
+}
